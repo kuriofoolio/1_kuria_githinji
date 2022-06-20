@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-  <h1>Hello World</h1>
-  <script src="./assets/main.js"></script>
-  <label for="name" >Name</label>
- <input type="text" id="name" name="name">  <br> <br>
-  <button id="click-me" type="submit" >Click me</button>
+  </head>
+  <body>
+    <h1>Hello World</h1>
 
-  
-</body>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" /> <br />
+    <br />
+    <button id="click-me" type="submit" onclick="clickEvent(name)">
+      Click me
+    </button>
+
+    <script type="text/javascript">
+      var name = document.getElementById("name");
+
+      function clickEvent(name) {
+        alert("Hello " + name + ", welcome to the bootcamp");
+      }
+    </script>
+  </body>
 </html>
